@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+
+<center>
+
+<p><H1><font color="white">ABC-Formule</font></H1></p>
+
+
+
+
+<input type='text' id = "a">
+<br>
+<input type='text' id = "b">
+<br>
+<input type='text' id = "c">
+<br>
+<button onclick="berekening()">bereken</button>
+<head>
+
+<style>
+
+body {
+  background-image: url("https://img.etimg.com/thumb/msid-65467688,width-643,imgsize-268745,resizemode-4/mathematics.jpg");
+}
+
+</style>
+
+</head>
+
+
+<script>
+var a;
+var b;
+var c;
+
+
+function berekening(){
+a = document.getElementById('a').value * 1;
+b = document.getElementById('b').value * 1;
+c = document.getElementById('c').value * 1;
+
+
+var plusuitkomst = (-1*b+Math.pow((Math.pow(b, 2)-4*a*c),0.5))/(2*a);
+var neguitkomst = (-1*b-Math.pow((Math.pow(b, 2)-4*a*c),0.5))/(2*a);
+
+alert(plusuitkomst+ ' , ' + neguitkomst);
+}
+</script>
+
+
+
+</html>
